@@ -64,6 +64,7 @@ describe('Create an organization', () => {
         const fullUrl = orgUrl.startsWith('http') ? orgUrl : `https://${orgUrl}`;
 
         // ✅ visit the subdomain
+      
         cy.visit(fullUrl);
 
         // ✅ cy.origin() is MANDATORY in Firefox for cross-origin commands
